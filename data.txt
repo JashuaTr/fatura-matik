@@ -1,0 +1,253 @@
+var ib_invoice_data = function(){/*
+#=========================================================================================================
+
+
+### Company data
+
+[{company_name}]
+Firma Bilgisi<br />
+
+[{company_address}]
+Sultan Fatih Cad. Osmanlı Mah.
+
+[{company_city_zip_state}]
+Yeni Şehir / İstanbul<br />
+
+[{company_phone_fax}]
++555 555 55 55<br />
+
+[{company_email_web}]
+http://websiteniz.com | info@websiteniz.com
+
+[{payment_info1}]
+Vergi Dairesi : 00000000000000000<br />
+
+[{payment_info2}]
+Vergi / TC Numarası : 00000000000000000<br />
+
+[{payment_info3}]
+Banka IBAN:<br />
+
+[{payment_info4}]
+TR22 2222 5555 8888 6666 11<br />
+
+[{payment_info5}]
+
+
+[{issue_date_label}]
+İşlem Tarih:
+
+[{issue_date}]
+
+
+[{net_term_label}]
+Net:
+
+[{net_term}]
+21
+
+[{due_date_label}]
+Sevk Tarih:
+
+[{due_date}]
+
+
+[{currency_label}]
+Birim:
+
+[{currency}]
+TRY
+
+[{po_number_label}]
+
+
+[{po_number}]
+
+
+[{bill_to_label}]
+Müşteri:
+
+[{client_name}]
+Cetinkaya Holding
+
+[{client_address}]
+Merkez Bankalar Cad. Eşref Sok.<br />
+
+[{client_city_zip_state}]
+Yeni Köy / Ankara
+
+[{client_phone_fax}]
++555 555 55 55
+
+[{client_email}]
+musteri@sitesi.com
+
+[{client_other}]
+
+
+[{invoice_title}]
+Fatura
+
+[{invoice_number}]
+#1
+
+
+### Column names
+
+[{item_row_number_label}]
+
+
+[{item_description_label}]
+Ürün<br />
+
+[{item_quantity_label}]
+Adet
+
+[{item_price_label}]
+Birim Fiyat<br />
+
+[{item_discount_label}]
+İndirim<br />
+
+[{item_tax_label}]
+Kdv<br />
+
+[{item_line_total_label}]
+Toplam
+
+[{item_row_number}]
+
+
+[{item_description}]
+
+
+[{item_quantity}]
+
+
+[{item_price}]
+
+
+[{item_discount}]
+
+
+[{item_tax}]
+
+
+[{item_line_total}]
+
+
+
+### Summary of totals
+
+[{amount_subtotal_label}]
+Ara:
+
+[{amount_subtotal}]
+2405.00
+
+[{tax_name}]
+Tax:
+
+[{tax_value}]
+
+
+[{amount_total_label}]
+Toplam:
+
+[{amount_total}]
+
+
+[{amount_paid_label}]
+indirim:
+
+[{amount_due_label}]
+Toplam:
+
+[{amount_due}]
+
+
+[{terms_label}]
+Notlar;
+
+[{terms}]
+Açıklama<br />
+
+
+### Settings
+
+# One of \'dd/mm/yyyy\', \'dd-mm-yyyy\', \'dd.mm.yyyy\', \'mm/dd/yyyy\', \'mm-dd-yyyy\', \'mm.dd.yyyy\', \'yyyy mm dd\', \'yyyy-mm-dd\', \'yyyy.mm.dd\'
+[date_format]
+mm/dd/yyyy
+
+# One of \'left\' or \'right\'
+[currency_position]
+left
+
+[show_currency]
+true
+
+# One of \'0,000.00\', \'0 000.00\', \'0000.00\', \'0.000,00\', \'0 000,00\', \'0000,00\'
+[number_format]
+0,000.00
+
+[default_columns]
+item_row_number,item_description,item_quantity,item_price,item_discount,item_tax,item_line_total
+
+[default_quantity]
+1
+
+[default_price]
+0
+
+[default_discount]
+0
+
+[default_tax]
+0
+
+[default_number_rows]
+3
+
+[auto_calculate_dates]
+true
+
+[load_items]
+true
+
+[invoicebus_fineprint]
+true
+
+[lang]
+en
+
+
+### Items (in this order item_description@||@item_quantity@||@item_price@||@item_discount@||@item_tax)
+
+[items]
+Web Hosting Yıllık Kiralama@||@1@||@1000@||@2@||@
+Freelance Hizmeti@||@2@||@750@||@5@||@
+
+
+
+### Custom data (in format field_name@||@field_value)
+
+# Document custom data
+[document_custom]
+
+
+# Client custom data
+[client_custom]
+
+
+
+### Logo
+
+# base64 encoded data URI of PNG image
+[{company_logo}]
+data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPoAAACmCAYAAADzoJKxAAAUSklEQVR4nO2deXQcxZ3H8/bBcBjL8siSfFvGp2xpJMs6bAM2lwnYYJvDEDA25ngvWW4DIXnk5IgJLMtCwk04dskCARJIgCzHmisBm4DxsrYDxoCt6ZqRNBodo3Ounu/+ITuX+hipf9KU2e/nvfqzpn/dU5/qrq5fVX/tawcAAFaDED1ZnWs/vjKAohN9oehSgKITfaHoUoCiE32h6FKAohN9oehSgKITfaHoUoCiE32h6FKAohN9oehSgKITfaHoUoCiE32h6FKAohN9oehSgKITfaHoUoCiE32h6FKAohN9oehSgKITfaHoUoCiE32h6FKAohN9oehSgKITfaHoUoCiE32h6FKAohN9oehSgKITfaHoUoCiE32h6FKAohN9oehSgKITfaHoUoCiE32h6FKAohN9oehSgKITfaHoUoCiE32h6FKAohN9oehSgKITfaHoUoCiE32h6FKAohN9oehSgKITfaHoUoCiE32h6FKAohN9oehSgKITfaHoUoCiE32h6FKAohN9oehSgKITfaHoUoCiE32h6FKAohN9oehSgKITfaHoUoCiE32h6FKAohN9oehSgKITfaHoUoCiE32h6FKAohN9oehSgKITfaHoUoCiE32h6FKAohN9oehSgKITfaHoUoCiE32h6FKAohN9oehSgKITfaHoUoCiE32h6FKAohN9oehSgKITfaHoUoCiE32h6FKAohN9oehSgKITfaHoUkBY9NRehciytQhNWoTw1MX9SmhiDZI7PrP/AdNE6ot6dPz8UTSffjEaa1YNbaleiaajzkLLJdci/vZmIG1mdZ7J7Z8iduvPEVm+bnhiXLIarVd+D8mPPwFSadf4Mokkkh9/gvbv34bISWvQWL1yiGNchaYTzkXbDRuR3Onw/w4Mii4FhEVvv+lOGHmzEBq7AKGxdf2KGl+B1K4vbev3PP8a1JQKqJFlUP4AlL8KqmA+VEHVEJX5UP55UP4Agv4p6PjpA0AmY3+CpomOOx6CMW4mVH45VEHFEMb2tzFWQvkDMApmo+fF113/h7YbboXhnw01OtBXd0iv4f5SCSN/LoyJsxF/54PBNJ9/hKJLAWHRo+s3QBWUW0oeGlsHVVKF1B7Dsm5y6w7U+yYjVDTftv7QlgUwJsxC6tMv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
+
+
+
+
+#=========================================================================================================
+*/}
